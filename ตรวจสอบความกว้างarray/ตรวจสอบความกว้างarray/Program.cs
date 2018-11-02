@@ -11,14 +11,24 @@ namespace ตรวจสอบความกว้างarray
         static void Main(string[] args)
         {
             float[] GPS = new float [8];
-            for (int i = 0; i < GPS.Length; i++)
+            int[] N = new int[8];
+            try
             {
-                GPS[i] = Convert.ToInt32(Console.ReadLine());i++;
-                Console.WriteLine("input GPS {0}",i);i--;
+                for (int i = 0,num=1; i< GPS.Length;i++,num++)
+                {
+                 
+                    Console.WriteLine("input GPS term {0}",num);
+                    GPS[i] = float.Parse(Console.ReadLine());
+                    Console.WriteLine("Input N term{0}",num);
+                    N[i] = int.Parse(Console.ReadLine());
 
+                    Console.WriteLine("GPS  = {0}", GPS[i]);
+                    Console.WriteLine("N = {0}",N[i]);
 
+                }
             }
-            Console.WriteLine("input GPA");
+            catch { }
+            
         }
     }
 }
