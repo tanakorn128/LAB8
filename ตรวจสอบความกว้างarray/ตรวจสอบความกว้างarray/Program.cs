@@ -24,7 +24,10 @@ namespace ตรวจสอบความกว้างarray
 
                     Console.WriteLine("GPS  = {0}", GPS[i]);
                     Console.WriteLine("N = {0}",N[i]);
-
+                }
+                for (int i = 0; i < GPS.Length; i++)
+                {
+                    GPS[i] += GPS[i];
                 }
             }
             catch { }
