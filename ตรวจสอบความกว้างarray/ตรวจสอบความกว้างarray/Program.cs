@@ -10,22 +10,15 @@ namespace ตรวจสอบความกว้างarray
     {
         static void Main(string[] args)
         {
-            int[] data = new int[10];
-            Student[] student = new Student[31];
-            Console.WriteLine(data.Length);
-            Console.WriteLine(student.Length);
-            Console.ReadLine();
-
-        }
-        class Student     // nested class
-        {
-            private string name;
-            public string Name
+            float[] GPS = new float [8];
+            for (int i = 0; i < GPS.Length; i++)
             {
-                get { return name; }
-                set { name = value; }
-            }
-        }
+                GPS[i] = Convert.ToInt32(Console.ReadLine());i++;
+                Console.WriteLine("input GPS {0}",i);i--;
 
+
+            }
+            Console.WriteLine("input GPA");
+        }
     }
 }
